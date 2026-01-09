@@ -128,7 +128,7 @@ main{
 
 .right-button{
     background-color: transparent;
-    border: 3px solid #e67308;
+    border: 3px solid #e61708;
     border-radius: 4px;
     padding: 12px 16px;
     display: flex;
@@ -143,29 +143,73 @@ main{
 }
 
 .right-button:hover{
-    background-color: #e67308;
+    background-color: #e61708;
     transition-duration: 500ms;
+}
+
+.about{
+    padding: 0 15px;
+}
+
+.a-top{
+    padding-bottom:30px ;
+}
+
+.a-top h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.a-top p{
+    margin-top: -30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    gap: 5px;
+    gap: 15px;
 }
 
 .card{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 350px;
-    background-color: #000;
+    height: 300px;
+    box-shadow: 4px 4px 10px #a8cbb8;
+    border-radius: 10px;
+    transform: ease-in-out;
+    transition-duration: 500ms;
+}
+
+.card:hover{
+    box-shadow: 0px 5px 20px #a8cbb8;
 }
 
 .cards-circle{
-    display: inline-block;
-    text-align: center;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
     width: 60px;
     height: 60px;
-    background-color: #e67308;
+    background-color: #e61708;
+}
+
+.card h3{
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card p{
+    margin-top: -10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 }
